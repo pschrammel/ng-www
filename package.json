@@ -1,12 +1,14 @@
 {
   "name": "metoda-ng-www",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --hostname 0.0.0.0",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^1.4.0"
+    "nuxt": "^1.4.0",
+    "vue-grid-layout": "^2.1.13",
+    "vue-no-ssr": "^0.2.2"
   }
 }

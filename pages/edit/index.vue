@@ -1,11 +1,11 @@
 <template>
-  <div>
+<no-ssr>
   <grid-layout
       :layout="layout"
       :col-num="12"
       :row-height="30"
-      :is-draggable="false"
-      :is-resizable="false"
+      :is-draggable="true"
+      :is-resizable="true"
       :vertical-compact="true"
       :margin="[10, 10]"
       :use-css-transforms="true"
@@ -21,7 +21,7 @@
       {{item.i}}
     </grid-item>
   </grid-layout>
-  </div>
+</no-ssr>
 </template>
 
 <script>
