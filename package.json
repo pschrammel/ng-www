@@ -1,0 +1,12 @@
+{
+  "name": "metoda-ng-www",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^1.4.0"
+  }
+}
