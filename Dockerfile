@@ -3,8 +3,6 @@ FROM 858049876441.dkr.ecr.eu-west-1.amazonaws.com/metoda_spa_nginx:latest
 #COPY . /spa_template
 WORKDIR /code
 
-
-
 ENV APP_DIR=/code
 WORKDIR $APP_DIR
 
