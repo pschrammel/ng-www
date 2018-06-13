@@ -27,6 +27,9 @@
 </template>
 
 <script>
+ import gheader from '../components/Header'
+ import gtext from '../components/Text'
+
  var testLayout = [
    {"x":0,"y":0,"w":2,"h":2,"i":"0",type: "gheader"},
    {"x":2,"y":0,"w":2,"h":4,"i":"1",type: "gtext"},
@@ -51,6 +54,10 @@
  ];
 
  export default {
+   components: {
+     gtext,
+     gheader,
+   },
    data() {
      return {
        layout: testLayout
