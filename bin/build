@@ -14,12 +14,12 @@ echo "action: $ACTION"
 # TODO: only if aws
 
 if [ "$ACTION" == "build" ]; then
-  `aws ecr get-login --region eu-west-1 --no-include-email`
+#  `aws ecr get-login --region eu-west-1 --no-include-email`
   docker build -t $repo/$project:latest $app_dir
 fi
 
 if [ "$ACTION" == "push" ]; then
-  `aws ecr get-login --region eu-west-1 --no-include-email`
+#  `aws ecr get-login --region eu-west-1 --no-include-email`
   docker build -t $repo/$project:latest $app_dir
   docker push $repo/$project:latest
   docker tag $repo/$project:latest $repo/$project:$tag
