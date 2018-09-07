@@ -1,3 +1,16 @@
 <template>
-  <h1>Looks Good</h1>
+  <h1>{{data.text}}</h1>
 </template>
+
+<script>
+ export default {
+   props: {
+     data: {
+       type: Object,
+       default: function() {
+         return {text: "Please set header"}
+       }
+     }
+   }
+ }
+</script>
