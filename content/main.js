@@ -16,19 +16,19 @@ export default {
     {"x":0,"y":21,"w":1,"h":5,"i":"6",type: "gheader"},
     {"x":1,"y":2,"w":1,"h":5,"i":"7",type: "gheader"},
     {"x":2,"y":2,"w":1,"h":5,"i":"8",type: "glayout",
-     /* atts: {
-        col_num:
-        {"x":8,"y":4,"w":2,"h":4,"i":"10",type: "gheader"},
-        {"x":10,"y":4,"w":2,"h":4,"i":"11",type: "gheader"},
-        {"x":0,"y":10,"w":2,"h":5,"i":"12",type: "gheader"},
-        {"x":2,"y":10,"w":2,"h":5,"i":"13",type: "gheader"},
-        {"x":4,"y":8,"w":2,"h":4,"i":"14",type: "gheader"},
-        {"x":6,"y":8,"w":2,"h":4,"i":"15",type: "gheader"},
-        {"x":8,"y":10,"w":2,"h":5,"i":"16",type: "gheader"},
-        {"x":10,"y":4,"w":2,"h":2,"i":"17",type: "gheader"},
-        {"x":0,"y":9,"w":2,"h":3,"i":"18",type: "gheader"},
-        {"x":2,"y":6,"w":2,"h":2,"i":"19",type: "gheader"}
-        ]; */
+     data: {
+       col_num: 1,
+       row_height: 40,
+       is_dragable: true,
+       is_resizable: true,
+       vertical_compact: true,
+       margins: [20,20],
+       use_css_transforms: true,
+       layout: [
+         {"x":0,"y":0,"w":2,"h":4,"i":"10",type: "gheader", data: {text: "Special1"}},
+         {"x":0,"y":1,"w":2,"h":4,"i":"11",type: "gheader", data: {text: "Special2"}}
+       ]
+     }
     }
   ]
 }
