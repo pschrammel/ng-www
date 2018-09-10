@@ -10,7 +10,7 @@
 </style>
 <script>
  import glayout from '@/components/Layout'
- import pages from '@/content/main.js'
+ import StaticPageRepo from '@/libs/StaticPageRepo';
 
  export default {
    components: {
@@ -18,7 +18,7 @@
    },
    data() {
      return {
-       pageLayout: {}
+       pageLayout: {layout:[]}
      }
    },
    computed: {
@@ -26,14 +26,18 @@
        return  '/' + this.$route.params[0]
      },
    },
-
    created() { //this is done in backend!
-     var loadPageLayout=pages[this.slug]
-     if (loadPageLayout)  {
-       this.pageLayout=loadPageLayout;
-     } else {
-       this.pageLayout=pages['404']
-     }
+     var pageRepo=new StaticPageRepo
+     pageRepo.load(this.slug).then(page => {
+       //console.log("repo returned ", page)
+       if (page) {
+         this.pageLayout=page;
+       } else {
+         pageRepo.load('404').then(notFoundPage => {
+           this.pageLayout=notFoundPage;
+         })
+       }
+     })
    }
  }
 
