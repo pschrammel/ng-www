@@ -3,8 +3,8 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _ca14574e = () => import('../pages/edit/index.vue' /* webpackChunkName: "pages/edit/index" */).then(m => m.default || m)
-const _dfc2c394 = () => import('../pages/index.vue' /* webpackChunkName: "pages/index" */).then(m => m.default || m)
+const _7ec66ce6 = () => import('../pages/edit/_.vue' /* webpackChunkName: "pages/edit/_" */).then(m => m.default || m)
+const _e41ea57a = () => import('../pages/_.vue' /* webpackChunkName: "pages/_" */).then(m => m.default || m)
 
 
 
@@ -65,14 +65,14 @@ export function createRouter () {
     scrollBehavior,
     routes: [
 		{
-			path: "/edit",
-			component: _ca14574e,
-			name: "edit"
+			path: "/edit/*",
+			component: _7ec66ce6,
+			name: "edit-all"
 		},
 		{
-			path: "/",
-			component: _dfc2c394,
-			name: "index"
+			path: "/*",
+			component: _e41ea57a,
+			name: "all"
 		}
     ],
     

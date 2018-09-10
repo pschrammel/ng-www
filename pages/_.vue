@@ -1,8 +1,6 @@
 <template>
   <div>
-    <no-ssr>
-      <glayout :data="page_data"> </glayout>
-    </no-ssr>
+    <glayout :data="page_data"> </glayout>
   </div>
 </template>
 <style>
@@ -11,8 +9,8 @@
  }
 </style>
 <script>
- import glayout from '../../components/Layout'
- import main from '../../content/main.js'
+ import glayout from '@/components/Layout'
+ import main from '@/content/main.js'
 
  export default {
    components: {
