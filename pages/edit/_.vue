@@ -5,7 +5,7 @@
         <div>
           Editing: {{ slug }}
         </div>
-      <glayout :data="page_data"> </glayout>
+      <glayout :data="pageLayout"> </glayout>
       </div>
     </no-ssr>
   </div>
@@ -17,7 +17,7 @@
 </style>
 <script>
  import glayout from '@/components/Layout'
- import main from '@/content/main.js'
+ import pages from '@/content/main.js'
 
  export default {
    components: {
@@ -25,12 +25,16 @@
    },
    data() {
      return {
-       page_data: main
+
      }
    }, // data
    computed: {
      slug() {
        return  '/' + this.$route.params[0]
+     },
+     pageLayout() {
+       console.log("rendering:",`'${this.slug}'`)
+       return pages[this.slug]
      }
    }
  }
