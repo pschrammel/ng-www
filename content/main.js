@@ -32,5 +32,18 @@ export default {
        }
       }
     ]
+  },
+
+  '404': {
+    col_num: 1,
+    row_height: 50,
+    is_dragable: true,
+    is_resizable: true,
+    vertical_compact: true,
+    margins: [10,10],
+    use_css_transforms: true,
+    layout: [
+      {"x":0,"y":0,"w":1,"h":2,"i":"0",type: "gheader", data: {text: "404"}}
+    ]
   }
 }

@@ -1,36 +1,15 @@
 <template>
   <div>
-    <glayout :data="pageLayout"> </glayout>
+    <gpage/>
   </div>
 </template>
-<style>
- .grid-item {
-   background-color: #aaaaaa;
- }
-</style>
+
 <script>
- import glayout from '@/components/Layout'
- import pages from '@/content/main.js'
+ import gpage from  '@/components/Page'
 
  export default {
    components: {
-     glayout,
-   },
-   data() {
-     return {
-
-     }
-   },
-   computed: {
-     slug() {
-       return  '/' + this.$route.params[0]
-     },
-     pageLayout() {
-       console.log("rendering:",`'${this.slug}'`);
-       return pages[this.slug]
-     }
+     gpage,
    }
  }
-
-
 </script>
