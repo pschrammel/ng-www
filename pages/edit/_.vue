@@ -5,7 +5,7 @@
         <div>
           Editing: {{ slug }}
         </div>
-      <gpage editing="true"/>
+      <gpage :editing="true"/>
       </div>
     </no-ssr>
   </div>
