@@ -3,8 +3,8 @@
       :layout="data.layout"
       :col-num="data.col_num"
       :row-height="data.row_height"
-      :is-draggable="data.is_draggable"
-      :is-resizable="data.is_resizable"
+      :is-draggable="isDraggable"
+      :is-resizable="isResizable"
       :vertical-compact="data.vertical_compact"
       :margin="data.margins"
       :use-css-transforms="data.user_css_transforms"
@@ -36,12 +36,25 @@
      gtext,
      gheader,
    },
+
+   computed: {
+     isDraggable() {
+       return this.editing && this.data.is_draggable
+     },
+     isResizable() {
+       return this.editing && this.data.is_resizable
+     }
+   },
+
    props: {
      data: {
        type: Object,
        default: function() {
          return { layout: []}
        }
+     },
+     editing: {
+       type: Boolean
      }
    }
  }

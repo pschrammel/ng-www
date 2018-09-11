@@ -1,6 +1,6 @@
 <template>
   <div>
-    <glayout :data="pageLayout"> </glayout>
+    <glayout :editing="editing" :data="pageLayout"> </glayout>
   </div>
 </template>
 <style>
@@ -15,6 +15,11 @@
  export default {
    components: {
      glayout,
+   },
+   props: {
+     editing: {
+       type: Boolean
+     }
    },
    data() {
      return {
