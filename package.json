@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "nuxt": "^1.4.0",
-    "vue-grid-layout": "^2.1.13",
+    "vue-grid-layout": "jbaysolutions/vue-grid-layout.git",
     "vue-no-ssr": "^0.2.2"
   }
 }
