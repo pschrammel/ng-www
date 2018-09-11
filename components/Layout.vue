@@ -24,7 +24,11 @@
     </grid-item>
   </grid-layout>
 </template>
-
+<stlye>
+  .grid-item {
+     border: 1px green solid;
+  }
+</stlye>
 <script>
  import gheader from './Header'
  import gtext from './Text'

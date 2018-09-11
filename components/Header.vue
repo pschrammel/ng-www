@@ -1,7 +1,11 @@
 <template>
-  <h1>{{data.text}}</h1>
+  <h1 class="ghead">{{data.text}}</h1>
 </template>
-
+<style scoped>
+ .ghead {
+   border: 1px red solid;
+ }
+</style>
 <script>
  export default {
    props: {
