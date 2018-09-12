@@ -4,7 +4,7 @@
       :col-num="data.col_num"
       :row-height="data.row_height"
       :is-draggable="isDraggable"
-      :is-resizable="isResizable"
+      :is-resizable="isDragable"
       :vertical-compact="data.vertical_compact"
       :margin="data.margins"
       :use-css-transforms="data.user_css_transforms"
@@ -18,7 +18,7 @@
                :h="item.h"
                :i="item.i"
     >
-      <component v-bind:is="item.type" :data="item.data">
+      <component v-bind:is="item.type" :data="item.data" :editing="editing">
         {{item.i}}
       </component>
     </grid-item>
