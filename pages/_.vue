@@ -13,12 +13,7 @@
    },
    data() {
      return {
-       ctx: {
-         page: {layout:[]},
-         context: null,
-         slug: '/',
-         editing: false
-       }
+       ctx: {}
      }
    },
    asyncData(context,callback) {

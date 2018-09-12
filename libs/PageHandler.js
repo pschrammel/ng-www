@@ -5,6 +5,11 @@ export default function(context,callback,defaults={}) {
   var repo= new StaticPageRepo;
   var ctx= defaults;
   ctx.slug=slug;
+  ctx.nuxt={ env: context.env,
+                router: context.router,
+                store: context.store,
+              };
+  //ctx.app=context.app circular dependency!
   repo.load(slug).then(page => {
     //console.log("repo returned ", page)
     if (page) {
