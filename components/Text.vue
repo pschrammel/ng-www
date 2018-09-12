@@ -12,7 +12,10 @@
        default: function() {
          return {text: "Lots of text"}
        }
-     }
+     },
+     ctx: {
+       type: Object,
+     },
    }
  }
 </script>

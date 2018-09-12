@@ -3,23 +3,23 @@
     <no-ssr>
       <div>
         <div>
-          Editing: {{ slug }}
+          Editing: {{ ctx.slug }}
         </div>
-      <gpage :editing="true"/>
+        <gpage :ctx="ctx" />
       </div>
     </no-ssr>
   </div>
 </template>
 <script>
  import gpage from '@/components/Page'
+ import pageHandler from '@/libs/PageHandler';
+
  export default {
    components: {
      gpage,
    },
-   computed: {
-     slug() {
-       return  '/' + this.$route.params[0]
-     },
-   }
+   asyncData(context,callback) {
+     pageHandler(context,callback,{editing: true})
+   },
  }
 </script>

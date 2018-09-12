@@ -14,7 +14,10 @@
        default: function() {
          return {text: "Please set header"}
        }
-     }
+     },
+     ctx: {
+       type: Object,
+     },
    }
  }
 </script>

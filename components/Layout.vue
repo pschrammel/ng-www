@@ -4,12 +4,11 @@
       :col-num="data.col_num"
       :row-height="data.row_height"
       :is-draggable="isDraggable"
-      :is-resizable="isDragable"
+      :is-resizable="isResizable"
       :vertical-compact="data.vertical_compact"
       :margin="data.margins"
       :use-css-transforms="data.user_css_transforms"
   >
-
     <grid-item class="grid-item" v-for="item in data.layout"
                :key="item.i"
                :x="item.x"
@@ -18,9 +17,7 @@
                :h="item.h"
                :i="item.i"
     >
-      <component v-bind:is="item.type" :data="item.data" :editing="editing">
-        {{item.i}}
-      </component>
+      <component v-bind:is="item.type" :ctx="ctx" :data="item.data"/>
     </grid-item>
   </grid-layout>
 </template>
@@ -40,26 +37,25 @@
      gtext,
      gheader,
    },
-
    computed: {
      isDraggable() {
-       return this.editing && this.data.is_draggable
+       return (this.editing && this.data.is_draggable)
      },
      isResizable() {
-       return this.editing && this.data.is_resizable
+       return (this.editing && this.data.is_resizable)
+     },
+     editing() {
+       return this.ctx.editing;
      }
    },
 
    props: {
+     ctx: {
+       type: Object,
+     },
      data: {
        type: Object,
-       default: function() {
-         return { layout: []}
-       }
      },
-     editing: {
-       type: Boolean
-     }
    }
  }
 </script>

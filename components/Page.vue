@@ -1,6 +1,6 @@
 <template>
   <div>
-    <glayout :editing="editing" :data="pageLayout"> </glayout>
+    <glayout :ctx="ctx" :data="ctx.page"> </glayout>
   </div>
 </template>
 <style>
@@ -9,39 +9,17 @@
  }
 </style>
 <script>
- import glayout from '@/components/Layout'
+ import glayout from '@/components/Layout';
 
  export default {
    components: {
      glayout,
    },
    props: {
-     editing: {
-       type: Boolean
+     ctx: {
+       type: Object
      }
    },
-   data() {
-     return {
-       pageLayout: {layout:[]}
-     }
-   },
-   computed: {
-     slug() {
-       return  '/' + this.$route.params[0]
-     },
-   },
-   created() { //this is done in backend!
-     this.$repo.load(this.slug).then(page => {
-       //console.log("repo returned ", page)
-       if (page) {
-         this.pageLayout=page;
-       } else {
-         this.$repo.load('404').then(notFoundPage => {
-           this.pageLayout=notFoundPage;
-         })
-       }
-     })
-   }
  }
 
 </script>

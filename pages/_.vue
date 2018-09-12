@@ -1,15 +1,28 @@
 <template>
   <div>
-    <gpage/>
+    <gpage :ctx="ctx"/>
   </div>
 </template>
 
 <script>
  import gpage from  '@/components/Page'
-
+ import pageHandler from '@/libs/PageHandler';
  export default {
    components: {
      gpage,
-   }
+   },
+   data() {
+     return {
+       ctx: {
+         page: {layout:[]},
+         context: null,
+         slug: '/',
+         editing: false
+       }
+     }
+   },
+   asyncData(context,callback) {
+     pageHandler(context,callback,{})
+   },
  }
 </script>

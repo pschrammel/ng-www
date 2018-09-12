@@ -1,5 +1,5 @@
 export default {
-  '/' : {
+  '/test' : {
     col_num: 3,
     row_height: 30,
     is_dragable: true,
