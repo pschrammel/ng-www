@@ -2,7 +2,7 @@ export default {
   '/test' : {
     col_num: 3,
     row_height: 30,
-    is_dragable: true,
+    is_draggable: true,
     is_resizable: true,
     vertical_compact: true,
     margins: [10,10],
@@ -37,7 +37,7 @@ export default {
   '404': {
     col_num: 1,
     row_height: 50,
-    is_dragable: true,
+    is_draggable: true,
     is_resizable: true,
     vertical_compact: true,
     margins: [10,10],

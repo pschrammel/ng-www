@@ -39,10 +39,14 @@
    },
    computed: {
      isDraggable() {
-       return (this.editing && this.data.is_draggable)
+       var result=!!(this.editing && this.data.is_draggable);
+       console.log("Draggable", result, this.data );
+       return result
      },
      isResizable() {
-       return (this.editing && this.data.is_resizable)
+       var result=!!(this.editing && this.data.is_resizable);
+       console.log("Resizable", result );
+       return result
      },
      editing() {
        return this.ctx.editing;
