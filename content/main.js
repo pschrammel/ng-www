@@ -7,6 +7,7 @@ export default {
     vertical_compact: true,
     margins: [10,10],
     use_css_transforms: true,
+    auto_size: true,
     i: 'main',
     layout: [
       {"x":0,"y":0,"w":1,"h":2,"i":"0",type: "gheader", data: {text: "Yeah baby"}},

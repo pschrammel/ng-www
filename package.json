@@ -7,7 +7,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "bootstrap": "3.3.7",
     "nuxt": "^1.4.0",
+    "uiv": "^0.26.2",
     "vue-grid-layout": "jbaysolutions/vue-grid-layout.git",
     "vue-no-ssr": "^0.2.2"
   }

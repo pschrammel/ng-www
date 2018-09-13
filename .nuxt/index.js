@@ -13,6 +13,7 @@ import { setContext, getLocation, getRouteData } from './utils'
 
 /* Plugins */
 import nuxt_plugin_vuegrid_4a67b318 from 'nuxt_plugin_vuegrid_4a67b318' // Source: ../plugins/vue-grid.js (ssr: false)
+import nuxt_plugin_uiv_34c9a56a from 'nuxt_plugin_uiv_34c9a56a' // Source: ../plugins/uiv.js
 
 
 // Component: <no-ssr>
@@ -134,6 +135,7 @@ async function createApp (ssrContext) {
 
   // Plugin execution
   
+  if (typeof nuxt_plugin_uiv_34c9a56a === 'function') await nuxt_plugin_uiv_34c9a56a(app.context, inject)
   
   if (process.browser) { 
     if (typeof nuxt_plugin_vuegrid_4a67b318 === 'function') await nuxt_plugin_vuegrid_4a67b318(app.context, inject)

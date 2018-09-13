@@ -17,6 +17,9 @@
                :h="item.h"
                :i="item.i"
     >
+      <div v-if="ctx.editing" style="position: absolute; bottom: 0px; left: 4px;">
+        <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
+      </div>
       <component v-bind:is="item.type" :ctx="ctx" :data="item.data"/>
     </grid-item>
   </grid-layout>
