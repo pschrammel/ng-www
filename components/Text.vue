@@ -1,8 +1,8 @@
 <template>
   <div style="height: 100%">
     <div v-if="ctx.editing" class="editing" >
-      <i v-if="true" class="glyphicon glyphicon-option-vertical" aria-hidden="true"></i>
-      <i v-else="false" class="glyphicon glyphicon-pencil" aria-hidden="true"></i>
+      <i v-if="true" class="glyphicon glyphicon-option-vertical"></i>
+      <i v-if="true" class="glyphicon glyphicon-pencil"></i>
     </div>
     <textarea v-model="data.text" v-if="ctx.editing" @blur="save" style="width: 100%; height: 100%; background-color: transparent; border: 0">
     </textarea>
