@@ -14,7 +14,7 @@ export default {
       {"x":1,"y":0,"w":1,"h":4,"i":"1",type: "gtext", data: {text: "text"}},
       {"x":2,"y":0,"w":1,"h":5,"i":"2",type: "gheader"},
       {"x":0,"y":1,"w":1,"h":3,"i":"3",type: "gtext"},
-      {"x":1,"y":1,"w":1,"h":3,"i":"4",type: "gheader"},
+      {"x":1,"y":1,"w":1,"h":12,"i":"4",type: "gimage", data: {text: "Sub", url: '//vue-grid-layout.surge.sh/static/luna-moth-adult-2.png'}},
       {"x":2,"y":1,"w":1,"h":3,"i":"5",type: "gheader"},
       {"x":0,"y":21,"w":1,"h":5,"i":"6",type: "gheader"},
       {"x":1,"y":2,"w":1,"h":5,"i":"7",type: "gheader"},

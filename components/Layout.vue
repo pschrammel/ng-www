@@ -30,15 +30,12 @@
   }
 </stlye>
 <script>
- import gheader from './Header'
- import gtext from './Text'
 
  export default {
    name: 'glayout',
 
    components: {
-     gtext,
-     gheader,
+
    },
    computed: {
      isDraggable() {

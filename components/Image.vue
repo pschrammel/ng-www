@@ -4,18 +4,19 @@
       <i v-if="true" class="glyphicon glyphicon-option-vertical"></i>
       <i v-if="true" class="glyphicon glyphicon-pencil"></i>
     </div>
-    <textarea v-model="data.text" v-if="ctx.editing" @blur="save">
-    </textarea>
+    <template  v-if="ctx.editing">
+      <img :src="data.url"/>
+      <input type="text" v-model="data.text" @blur="save"/>
+    </template>
     <template v-if="!ctx.editing">
+      <img :src="data.url"/>
       {{data.text}}
     </template>
   </div>
 </template>
 <style scoped>
- textarea {
-   resize: none;
+ input {
    width: 100%;
-   height: 100%;
    background-color: transparent;
    border: 0;
  }
@@ -42,7 +43,7 @@
    },
    methods: {
      save() {
-       console.log("saving text:", this.data.text )
+       console.log("saving image:", this.data.text )
      }
    }
  }
