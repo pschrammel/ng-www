@@ -12,11 +12,15 @@
   </div>
 </template>
 <style scoped>
-  .editing {
-    position: absolute;
-    right: 4px;
-    top: 2px;
-  }
+ textarea {
+   resize: none;
+ }
+
+ .editing {
+   position: absolute;
+   right: 4px;
+   top: 2px;
+ }
 </style>
 
 <script>
