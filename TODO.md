@@ -1,7 +1,7 @@
 # UI
  * drag into container
  * drag out of container
- * wysiwyg editor (no html! just json?)
+ * wysiwyg editor (no html! just json? https://github.com/AlisProject/alis-editor/tree/master/src )
  * responsive (media queries, ordering of griditems)
  * row containers
  * column containers
