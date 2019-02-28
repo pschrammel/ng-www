@@ -46,7 +46,7 @@ export default {
     margins: [10,10],
     use_css_transforms: true,
     layout: [
-      {"x":0,"y":0,"w":1,"h":2,"i":"0",type: "gheader", data: {text: "404"}}
+      {"x":0,"y":0,"w":1,"h":2,"i":"0",type: "gheader", data: {text: "404 - Ups ! please try /test or /edit/test"}}
     ]
   }
 }
