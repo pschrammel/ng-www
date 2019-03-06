@@ -5,6 +5,7 @@
       :row-height="data.row_height"
       :is-draggable="isDraggable"
       :is-resizable="isResizable"
+      :responsive="responsive"
       :vertical-compact="data.vertical_compact"
       :margin="data.margins"
       :use-css-transforms="data.user_css_transforms"
@@ -29,6 +30,7 @@
      border: 1px green solid;
   }
 </stlye>
+
 <script>
 
  export default {
@@ -38,6 +40,11 @@
 
    },
    computed: {
+     responsive() {
+       var result=!!(this.editing && this.data.responsive);
+       console.log("Responsive", result);
+       return result
+     },
      isDraggable() {
        var result=!!(this.editing && this.data.is_draggable);
        console.log("Draggable", result, this.data );

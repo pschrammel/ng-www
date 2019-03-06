@@ -5,10 +5,13 @@
 </template>
 
 <script>
+ import Vue from 'vue'
+ import draggable from 'vuedraggable'
  import gpage from  '@/components/Page'
  import pageHandler from '@/libs/PageHandler';
  export default {
    components: {
+     draggable,
      gpage,
    },
    data() {
@@ -20,4 +23,5 @@
      pageHandler(context,callback,{})
    },
  }
+  Vue.use(draggable)
 </script>
