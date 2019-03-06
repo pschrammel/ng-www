@@ -4694,6 +4694,10 @@ sort-keys@^1.0.0:
   dependencies:
     is-plain-obj "^1.0.0"
 
+sortablejs@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/sortablejs/-/sortablejs-1.8.3.tgz#5ae908ef96300966e95440a143340f5dd565a0df"
+
 source-list-map@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.0.tgz#aaa47403f7b245a92fbc97ea08f250d6087ed085"
@@ -5226,13 +5230,17 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-class-component@^6.2.0:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-6.3.2.tgz#e6037e84d1df2af3bde4f455e50ca1b9eec02be6"
+
 vue-functional-data-merge@^2.0.3:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/vue-functional-data-merge/-/vue-functional-data-merge-2.0.7.tgz#bdee655181eacdcb1f96ce95a4cc14e75313d1da"
 
-vue-grid-layout@jbaysolutions/vue-grid-layout.git:
-  version "2.2.0"
-  resolved "https://codeload.github.com/jbaysolutions/vue-grid-layout/tar.gz/000991778fd570cb67098e4e30b09b0435479310"
+vue-grid-layout@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/vue-grid-layout/-/vue-grid-layout-2.3.3.tgz#1552beac5e06867d52f2dbe73753bec25063c8a1"
   dependencies:
     element-resize-detector "^1.1.10"
     interactjs "^1.3.4"
@@ -5270,6 +5278,20 @@ vue-meta@^1.4.3:
 vue-no-ssr@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-0.2.2.tgz#e1a0ef0ba39fc54972edd71a2ae11a7988312b19"
+
+vue-property-decorator@^7.3.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-7.3.0.tgz#d50d67f0b0f1c814f9f2fba36d6eeccbcc62dbb6"
+  dependencies:
+    vue-class-component "^6.2.0"
+
+vue-responsive-grid-layout@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/vue-responsive-grid-layout/-/vue-responsive-grid-layout-1.1.8.tgz#d484dd9c746e8e521814beb69aa2ca583bc8a6de"
+  dependencies:
+    vue "^2.6.7"
+    vue-class-component "^6.2.0"
+    vue-property-decorator "^7.3.0"
 
 vue-router@^3.0.1:
   version "3.0.1"
@@ -5309,6 +5331,16 @@ vue-template-es2015-compiler@^1.6.0:
 vue@^2.5.13:
   version "2.5.16"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.16.tgz#07edb75e8412aaeed871ebafa99f4672584a0085"
+
+vue@^2.6.7:
+  version "2.6.8"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.8.tgz#f21cbc536bfc14f7d1d792a137bb12f69e60ea91"
+
+vuedraggable@^2.19.1:
+  version "2.19.1"
+  resolved "https://registry.yarnpkg.com/vuedraggable/-/vuedraggable-2.19.1.tgz#04d772c71f4480564c7003b66df4214c64ab39d5"
+  dependencies:
+    sortablejs "^1.8.3"
 
 vuex@^3.0.1:
   version "3.0.1"

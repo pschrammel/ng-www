@@ -10,7 +10,9 @@
     "bootstrap": "3.3.7",
     "nuxt": "^1.4.0",
     "uiv": "^0.26.2",
-    "vue-grid-layout": "jbaysolutions/vue-grid-layout.git",
-    "vue-no-ssr": "^0.2.2"
+    "vue-grid-layout": "^2.3.3",
+    "vue-no-ssr": "^0.2.2",
+    "vue-responsive-grid-layout": "^1.1.8",
+    "vuedraggable": "^2.19.1"
   }
 }

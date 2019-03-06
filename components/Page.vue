@@ -9,10 +9,13 @@
  }
 </style>
 <script>
+import Vue from 'vue'
+ import draggable from 'vuedraggable'
  import glayout from '@/components/Layout';
 
  export default {
    components: {
+     draggable,
      glayout,
    },
    props: {
@@ -21,5 +24,5 @@
      }
    },
  }
-
+ Vue.use(draggable)
 </script>
